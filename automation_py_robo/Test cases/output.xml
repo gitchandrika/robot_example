@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180806 02:49:48.321" generator="Robot 3.0.4 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Chandrika Bhartiiya\PycharmProjects\automation_py_robo\Test cases\Test_case.robot" id="s1" name="Test case">
+<test id="s1-t1" name="TC_1">
+<kw name="browser Open and maximize" library="resource_1">
+<assign>
+<var>${res}</var>
+</assign>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180806 02:49:48.489" level="INFO">Opening browser 'chrome' to base url 'http://www.gmail.com'.</msg>
+<status status="PASS" endtime="20180806 02:49:56.453" starttime="20180806 02:49:48.488"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180806 02:49:57.611" starttime="20180806 02:49:56.454"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20180806 02:49:59.244" level="INFO">${title} = Gmail</msg>
+<status status="PASS" endtime="20180806 02:49:59.244" starttime="20180806 02:49:57.611"></status>
+</kw>
+<msg timestamp="20180806 02:49:59.244" level="INFO">${res} = Gmail</msg>
+<status status="PASS" endtime="20180806 02:49:59.244" starttime="20180806 02:49:48.488"></status>
+</kw>
+<kw name="login" library="resource_1">
+<arguments>
+<arg>${res}</arg>
+<arg>P@ssw0rd94</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:identifierId</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20180806 02:49:59.246" level="INFO">Typing text 'Gmail' into text field 'id:identifierId'.</msg>
+<status status="PASS" endtime="20180806 02:49:59.431" starttime="20180806 02:49:59.246"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<status status="PASS" endtime="20180806 02:49:59.431" starttime="20180806 02:49:59.431"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//span[@class='RveJvd snByac'])[2]</arg>
+</arguments>
+<msg timestamp="20180806 02:49:59.432" level="INFO">Clicking element 'xpath=(//span[@class='RveJvd snByac'])[2]'.</msg>
+<status status="PASS" endtime="20180806 02:50:03.978" starttime="20180806 02:49:59.432"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<status status="PASS" endtime="20180806 02:50:03.981" starttime="20180806 02:50:03.979"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20180806 02:50:03.984" level="INFO">Typing text 'P@ssw0rd94' into text field 'name:password'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180806 02:50:08.394" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180806 02:50:08.395" starttime="20180806 02:50:06.043"></status>
+</kw>
+<msg timestamp="20180806 02:50:08.404" level="FAIL">Element with locator 'name:password' not found.</msg>
+<status status="FAIL" endtime="20180806 02:50:08.404" starttime="20180806 02:50:03.982"></status>
+</kw>
+<status status="FAIL" endtime="20180806 02:50:08.405" starttime="20180806 02:49:59.245"></status>
+</kw>
+<status status="FAIL" endtime="20180806 02:50:08.408" critical="yes" starttime="20180806 02:49:48.487">Element with locator 'name:password' not found.</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" endtime="20180806 02:50:08.421" starttime="20180806 02:49:48.325"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Test case" pass="0">Test case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

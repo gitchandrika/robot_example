@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180804 21:01:20.197" generator="Robot 3.0.4 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Chandrika Bhartiiya\PycharmProjects\automation_py_robo\Test_case.robot" id="s1" name="Test case">
+<test id="s1-t1" name="TC browser close">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180804 21:01:20.340" level="INFO">Opening browser 'Chrome' to base url 'http://www.google.com'.</msg>
+<status status="PASS" endtime="20180804 21:01:29.282" starttime="20180804 21:01:20.339"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180804 21:01:32.544" starttime="20180804 21:01:29.283"></status>
+</kw>
+<status status="PASS" endtime="20180804 21:01:32.545" critical="yes" starttime="20180804 21:01:20.338"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20180804 21:01:32.556" starttime="20180804 21:01:20.201"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test case" pass="1">Test case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
